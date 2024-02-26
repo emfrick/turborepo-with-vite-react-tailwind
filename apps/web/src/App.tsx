@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-import { Button } from '@repo/ui';
+import { Button, GradientButton } from '@repo/ui';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,9 +20,12 @@ function App() {
               Vite + React + Tailwind
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button onClick={() => setCount(prev => prev + 1)}>
-                    I'm a button
+              <Button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={() => setCount(prev => prev + 1)}>
+                Increment
               </Button>
+              <GradientButton onClick={() => setCount(prev => prev - 1)}>
+                Decrement
+              </GradientButton>
               <h4 className="text-sm font-semibold leading-6 text-gray-400">Count: {count}</h4>
             </div>
           </div>
