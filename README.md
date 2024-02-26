@@ -7,7 +7,7 @@ This is an official starter Turborepo.
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-vite
+npx create-turbo@latest -e with-react-tailwind-vite
 ```
 
 ## What's inside?
@@ -16,9 +16,8 @@ This Turborepo includes the following packages and apps:
 
 ### Apps and Packages
 
-- `docs`: a vanilla [vite](https://vitejs.dev) ts app
-- `web`: another vanilla [vite](https://vitejs.dev) ts app
-- `ui`: a stub component & utility library shared by both `web` and `docs` applications
+- `web`: a React + Tailwind [vite](https://vitejs.dev) ts app
+- `ui`: a React + Tailwind component library shared by the `web` application
 - `eslint-config-custom`: shared `eslint` configurations
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -30,5 +29,4 @@ This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
