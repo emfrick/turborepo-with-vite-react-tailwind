@@ -36,6 +36,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@repo/tailwind-config':
+        specifier: workspace:^
+        version: link:../../packages/tailwind-config
       '@types/react':
         specifier: ^18.2.56
         version: 18.2.58
@@ -51,9 +54,6 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.1.4)
-      autoprefixer:
-        specifier: ^10.4.17
-        version: 10.4.17(postcss@8.4.35)
       eslint:
         specifier: ^8.56.0
         version: 8.56.0
@@ -63,12 +63,6 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.5
         version: 0.4.5(eslint@8.56.0)
-      postcss:
-        specifier: ^8.4.35
-        version: 8.4.35
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
       typescript:
         specifier: ^5.2.2
         version: 5.3.3
@@ -88,6 +82,18 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.56.0)
 
+  packages/tailwind-config:
+    devDependencies:
+      autoprefixer:
+        specifier: ^10.4.17
+        version: 10.4.17(postcss@8.4.35)
+      postcss:
+        specifier: ^8.4.35
+        version: 8.4.35
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.1
+
   packages/typescript-config: {}
 
   packages/ui:
@@ -99,6 +105,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@repo/tailwind-config':
+        specifier: workspace:^
+        version: link:../tailwind-config
       '@types/node':
         specifier: ^20.11.20
         version: 20.11.20

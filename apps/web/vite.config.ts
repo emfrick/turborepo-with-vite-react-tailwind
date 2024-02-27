@@ -9,5 +9,5 @@ export default defineConfig({
     alias: {
       "@repo/ui": resolve(__dirname, "../../packages/ui/src/index.ts")
     },
-},
+  },
 })

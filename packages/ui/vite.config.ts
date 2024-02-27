@@ -17,13 +17,17 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, "src/index.ts"),
             name: "@repo/ui",
-            formats: ['es', 'umd'],
+            formats: ['es'],
             fileName: (format) => `index.${format}.js`
         },
         rollupOptions: {
             external: ["react", "react-dom", "react-jsx"],
             output: {
-                assetFileNames: 'index-foo.[ext]'
+                assetFileNames: 'index-foo.[ext]',
+                // globals: {
+                //     React: "react",
+                //     "react-dom": "react-dom"
+                // }
             }
         }
     }
