@@ -36,9 +36,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@repo/tailwind-config':
+      '@repo/tailwindcss-config':
         specifier: workspace:^
-        version: link:../../packages/tailwind-config
+        version: link:../../packages/tailwindcss-config
       '@types/react':
         specifier: ^18.2.56
         version: 18.2.58
@@ -82,7 +82,7 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.56.0)
 
-  packages/tailwind-config:
+  packages/tailwindcss-config:
     devDependencies:
       autoprefixer:
         specifier: ^10.4.17
@@ -105,9 +105,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@repo/tailwind-config':
+      '@repo/tailwindcss-config':
         specifier: workspace:^
-        version: link:../tailwind-config
+        version: link:../tailwindcss-config
       '@types/node':
         specifier: ^20.11.20
         version: 20.11.20
