@@ -1,13 +1,13 @@
 # `Turborepo` Vite starter
 
-This is an official starter Turborepo.
+This is an unofficial starter Turborepo.
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-react-tailwind-vite
+pnpm dev
 ```
 
 ## What's inside?
@@ -18,8 +18,9 @@ This Turborepo includes the following packages and apps:
 
 - `web`: a React + Tailwind [vite](https://vitejs.dev) ts app
 - `ui`: a React + Tailwind component library shared by the `web` application
-- `eslint-config-custom`: shared `eslint` configurations
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `tailwindcss-config`: shared Tailwind config used by the `ui` and `web` applications
+- `eslint-config`: shared `eslint` configurations
+- `typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
 
