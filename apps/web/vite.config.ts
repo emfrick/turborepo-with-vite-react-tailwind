@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@repo/ui": resolve(__dirname, "../../packages/ui/src/index.ts")
+      "@repo/ui": resolve(__dirname, "../../packages/ui/src")
     },
   },
 })

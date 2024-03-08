@@ -35,6 +35,8 @@
   "files": [
     "dist"
   ],
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
