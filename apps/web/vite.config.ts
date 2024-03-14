@@ -9,9 +9,15 @@ export default defineConfig({
     react(),
     tsconfigPaths()
   ],
-  resolve: {
-    alias: {
-      "@repo/ui": resolve(__dirname, "../../packages/ui/src")
-    },
+  // https://v2.vitejs.dev/config/#server-watch
+  server: {
+    watch: {
+      ignored: ['!**/node_modules/@repo/**']
+    }
   },
+  // The watched package must be excluded from optimization,
+  // so that it can appear in the dependency graph and trigger hot reload.
+  optimizeDeps: {
+    exclude: ['@repo']
+  }
 })
