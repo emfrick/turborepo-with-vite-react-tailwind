@@ -16,9 +16,8 @@ This Turborepo includes the following packages and apps:
 
 ### Apps and Packages
 
-- `web`: a React + Tailwind [vite](https://vitejs.dev) ts app
-- `ui`: a React + Tailwind component library shared by the `web` application
-- `tailwindcss-config`: shared Tailwind config used by the `ui` and `web` applications
+- `web`: a React + [Tailwind](https://tailwindui.com/) [vite](https://vitejs.dev) ts app
+- `ui`: a React + [Tailwind](https://tailwindui.com/) component library shared by the `web` application
 - `eslint-config`: shared `eslint` configurations
 - `typescript-config`: `tsconfig.json`s used throughout the monorepo
 
@@ -30,4 +29,3 @@ This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
