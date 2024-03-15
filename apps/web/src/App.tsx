@@ -1,6 +1,6 @@
 import './App.css'
 
-import { Navbar, Hero, Analytics, Newsletter, Cards } from '@repo/ui';
+import { Navbar, Hero, Analytics, Newsletter, Cards, Footer } from '@repo/ui';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Analytics />
       <Newsletter />
       <Cards />
+      <Footer />
      </div>
     </>
   )
