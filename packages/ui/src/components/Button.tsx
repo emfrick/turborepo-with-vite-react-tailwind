@@ -4,6 +4,6 @@ export type ButtonProps = {
 
 export const Button = ({}: ButtonProps) => {
   return (
-    <div>Button</div>
+    <div className="button">Button</div>
   );
 };
