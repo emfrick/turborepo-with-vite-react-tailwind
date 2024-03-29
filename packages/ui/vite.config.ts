@@ -19,7 +19,7 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, "src/index.ts"),
             name: "@repo/ui",
-            formats: ['es'],
+            formats: ['es', 'umd'],
             fileName: (format) => `index.${format}.js`
         },
         rollupOptions: {

@@ -19,5 +19,11 @@ export default defineConfig({
   // so that it can appear in the dependency graph and trigger hot reload.
   optimizeDeps: {
     exclude: ['@repo']
+  },
+  resolve: {
+    alias: {
+      "@repo/ui/styles.css": resolve(__dirname, "../../packages/ui/src/index.css"),
+      "@repo/ui": resolve("../../packages/ui/src/index.ts")
+    }
   }
 })
