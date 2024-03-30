@@ -4,6 +4,9 @@
     "clean": {
       "cache": false
     },
+    "preview": {
+      "cache": false
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]

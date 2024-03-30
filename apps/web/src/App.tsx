@@ -1,3 +1,4 @@
+import "@repo/ui/styles.css";
 import { Button } from "@repo/ui";
 
 export type AppProps = {
@@ -7,7 +8,7 @@ export type AppProps = {
 const App = ({}: AppProps) => {
   return (
     <div>
-        App
+        <h1 className="text-blue-500 mb-6 text-5xl font-bold">App</h1>
         <Button />
     </div>
   );

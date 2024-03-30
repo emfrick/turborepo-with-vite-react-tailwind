@@ -23,7 +23,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@repo/ui/styles.css": resolve(__dirname, "../../packages/ui/src/index.css"),
-      "@repo/ui": resolve("../../packages/ui/src/index.ts")
+      "@repo/ui": resolve(__dirname, "../../packages/ui/src/index.ts")
     }
   }
 })
